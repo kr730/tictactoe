@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = 'newGame2.js'></script>
+</head>
+<style>
+    table {
+        height: 600px;
+        width: 600px;
+    }
+    tr {
+        height: 200px;
+        border: 1px solid black;
+    }
+    td {
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        font-size: 100px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td onclick="window.updateClick(this,0,0)"></td>
+            <td onclick="window.updateClick(this,0,1)"></td>
+            <td onclick="window.updateClick(this,0,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="updateClick(this,1,0)"></td>
+            <td onclick="updateClick(this,1,1)"></td>
+            <td onclick="updateClick(this,1,2)"></td>
+        </tr>
+        <tr>
+            <td onclick="updateClick(this,2,0)"></td>
+            <td onclick="updateClick(this,2,1)"></td>
+            <td onclick="updateClick(this,2,2)"></td>
+        </tr>
+    </table>
+</body>
+</html>

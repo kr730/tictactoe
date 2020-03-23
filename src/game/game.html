@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicTacToe</title>
+    <script src="game.js" type="module"></script>
+    <style>
+        table {
+            height: 600px;
+            width: 600px;
+        }
+
+        td {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<table id="table">
+    <tr>
+        <td onclick="window.click(this, 0, 0)"></td>
+        <td onclick="window.click(this, 0, 1)"></td>
+        <td onclick="window.click(this, 0, 2)"></td>
+    </tr>
+    <tr>
+        <td onclick="window.click(this, 1, 0)"></td>
+        <td onclick="window.click(this, 1, 1)"></td>
+        <td onclick="window.click(this, 1, 2)"></td>
+    </tr>
+    <tr>
+        <td onclick="window.click(this, 2, 0)"></td>
+        <td onclick="window.click(this, 2, 1)"></td>
+        <td onclick="window.click(this, 2, 2)"></td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+<!--
+<script>
+    // let table = document.getElementById('table');
+    // let tr = document.createElement('tr');
+    // let td = document.createElement('td');
+    // for(let i = 0; i < 3; i++){
+    //     table.prepend(tr);
+    //     tr.prepend(td);
+    //     tr.prepend(td);
+    //     tr.prepend(td);
+    // }
+
+</script>-->
