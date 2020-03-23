@@ -25,9 +25,18 @@ class Game {
             this.cells[x][y] = this.currentPlayer;
             cell.innerHTML = this.currentPlayer;
         }
+        this.coloring(cell,x,y);
         this.whoIsWinner();
     }
 
+    coloring(cell,x,y){
+        if(this.currentPlayer == 'X'){
+            cell.classList.add('activeTdX');
+        }
+        if(this.currentPlayer == 'O'){
+            cell.classList.add('activeTdO');
+        }
+    }
 
     whoIsWinner(){
         const fieldLength = this.cells.length;
@@ -47,6 +56,8 @@ class Game {
 
             if(sideDiagonal == 3 || mainDiagonal == fieldLength){
                 alert(`${this.currentPlayer} is winner`);
+                this.startNewGame();
+
             }
 
             for(let j = 0; j < this.cells[i].length; j++){
@@ -60,10 +71,20 @@ class Game {
 
                 if(vercount == fieldLength || horcount == fieldLength){
                     alert(`${this.currentPlayer} is winner`);
+                    this.startNewGame();
                 }
             }
             horcount = 0;
             vercount = 0;
+        }
+    }
+    startNewGame(){
+        this.cells = [[,,,],[,,,],[,,,]];
+        let td = document.querySelectorAll('td');
+        for(let i = 0; i < td.length; i++){
+            td[i].innerHTML = "";
+            td[i].classList.remove('activeTdO');
+            td[i].classList.remove('activeTdX');
         }
     }
 

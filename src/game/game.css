@@ -1,0 +1,26 @@
+
+
+
+table {
+    height: 600px;
+    width: 600px;
+}
+tr {
+    height: 200px;
+    border: 2px solid black;
+}
+td {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+.activeTdX {
+    background-color:rgb(229, 152, 179);
+    color: rgb(198, 82, 118);
+}
+.activeTdO {
+    background-color:#8abdc0;
+    color: #567b7d;
+}
