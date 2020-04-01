@@ -4,7 +4,7 @@ export class Game {
         this.playerTwo = 'O';
         this.currentPlayer = null;
         this.moveCount = 0;
-        this.cells = [[,,,],[,,,],[,,,]];
+        this.cells = [['','',''],['','',''],['','','']];
     }
 
     chosePlayer() {
